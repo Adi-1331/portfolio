@@ -16,20 +16,18 @@ const Skills = () => {
             <img className='size-23' src="assets/css.svg" alt="CSS" />
             <p>CSS</p>
           </div>
+        </div>
+         <div>
           <div>
             <img className='size-23' src="assets/javascript.svg" alt="JavaScript" />
             <p>JavaScript</p>
           </div>
-        </div>
-        <div>
-          {/* <div>
-            <img className='size-23' src="assets/tailwind.svg" alt="Tailwind CSS" />
-            <p>Tailwind CSS</p>
-          </div> */}
           <div>
             <img className='size-23 invert' src="assets/express.svg" alt="Express.js" />
             <p>Express.js</p>
           </div>
+          </div>
+          <div>
           <div>
             <img className='size-23' src="assets/reactjs.svg" alt="React.js" />
             <p>React.js</p>
@@ -40,18 +38,14 @@ const Skills = () => {
           </div>
         </div>
         <div>
-          {/* <div>
-            <img className='size-23' src="assets/express.svg" alt="Express.js" />
-            <p>Express.js</p>
-          </div> */}
-          {/* <div>
+          <div>
             <img className='size-23' src="assets/github.svg" alt="Github" />
             <p>Github</p>
-          </div> */}
-          {/* <div>
-            <img className='size-23' src="assets/vite.svg" alt="Vite" />
-            <p>Vite</p>
-          </div> */}
+          </div>
+           <div>
+            <img className='size-23' src="assets/tailwind.svg" alt="Tailwind CSS" />
+            <p>Tailwind CSS</p>
+          </div>
         </div>
         <div className="flex flex-col items-center flex-wrap justify-center gap-1">
           <img className='size-80' src="assets/skills.png" alt="Skill-Img" />
