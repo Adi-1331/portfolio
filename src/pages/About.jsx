@@ -43,7 +43,10 @@ const About = () => {
             <p>Class 10th, CBSE (86%)</p>
             <p>2022-2023</p>
           </div>
-          <div><motion.button whileTap={{ scale: 0.8 }} className='rounded-3xl text-[#e9e9e9] border-3 font-semibold hover:bg-yellow-700 border-yellow-400 p-1.5 text-xs sm:text-sm lg:text-base'>Download CV</motion.button></div>
+          <div>
+            <a target="_blank" href="https://drive.google.com/file/d/1eicVbmOToErFMGv2ItiOb4a9u_xK6WD0/view?usp=drivesdk"><motion.button whileTap={{ scale: 0.8 }} className='rounded-3xl text-[#e9e9e9] border-3 font-semibold hover:bg-yellow-700 border-yellow-400 p-1.5 text-xs sm:text-sm lg:text-base'>View Resume</motion.button>
+            </a>
+          </div>
         </div>
       </div>
     </div>
