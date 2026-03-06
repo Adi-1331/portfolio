@@ -35,7 +35,8 @@ const Contact = () => {
                 type="text" 
                 id="name" 
                 name="name"
-                className="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" 
+                className="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                required
               />
               <ValidationError 
                 prefix="Name" 
@@ -49,7 +50,8 @@ const Contact = () => {
                 type="email" 
                 id="email" 
                 name="email"
-                className="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" 
+                className="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                required
               />
               <ValidationError 
                 prefix="Email" 
@@ -64,6 +66,7 @@ const Contact = () => {
                 name="message"
                 rows={4} 
                 className="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                required
               ></textarea>
               <ValidationError 
                 prefix="Message" 

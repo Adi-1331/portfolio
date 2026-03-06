@@ -6,19 +6,22 @@ const Project = () => {
       id: 1,
       title: 'Crypto Price Tracker',
       image: 'assets/crypto.png',
-      description: 'Real-time cryptocurrency price tracking with live market updates'
+      description: 'Real-time cryptocurrency price tracking with live market updates',
+      url:'https://github.com/Adi-1331/crypto-price-tracker'
     },
     {
       id: 2,
       title: 'Memory Card Game',
       image: 'assets/memory.png',
-      description: 'Interactive memory matching game with multiple difficulty levels'
+      description: 'Interactive memory matching game with multiple difficulty levels',
+      url:'https://github.com/Adi-1331/memory-card-game'
     },
     {
       id: 3,
       title: 'Task Manager',
       image: 'assets/task.png',
-      description: 'Full-featured task management with organize and prioritize features'
+      description: 'Full-featured task management with organize and prioritize features',
+      url:'https://github.com/Adi-1331/task-manager'
     }
   ]
 
@@ -30,17 +33,19 @@ const Project = () => {
       <div className='flex flex-wrap text-center items-center justify-center gap-8'>
         {projects.map((project) => (
           <div key={project.id} className='w-full max-w-xs'>
-            <div className='relative overflow-hidden rounded-lg h-64 group'>
+            <a href={project.url} target="_blank">
+              <div className='relative overflow-hidden rounded-lg h-64 group'>
               <img 
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" 
                 src={project.image} 
                 alt={project.title} 
               />
-              <div className='absolute inset-0 bg-black bg-opacity-85 flex flex-col justify-center items-center opacity-100 group-hover:opacity-0 transition-opacity duration-500'>
+              <div className='absolute inset-0 bg-black/80  bg-opacity-85 flex flex-col justify-center items-center opacity-100 group-hover:opacity-0 transition-opacity duration-500'>
                 <h3 className='text-yellow-400 text-xl font-bold mb-3'>{project.title}</h3>
                 <p className='text-gray-300 text-sm px-4'>{project.description}</p>
               </div>
             </div>
+            </a>
           </div>
         ))}
       </div>
